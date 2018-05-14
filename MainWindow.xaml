@@ -1,0 +1,36 @@
+﻿<Window x:Class="cs_lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cs_lab5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="563.2">
+    <Grid Margin="0,0,-6.4,0">
+        <TextBlock HorizontalAlignment="Left" Margin="75,65,0,0" TextWrapping="Wrap" Text="K" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="75,104,0,0" TextWrapping="Wrap" Text="N" VerticalAlignment="Top"/>
+        <TextBox x:Name="k_input" HorizontalAlignment="Left" Height="23" Margin="100,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="n_input" HorizontalAlignment="Left" Height="23" Margin="100,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="taskResult" HorizontalAlignment="Left" Height="23" Margin="360,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" AutomationProperties.Name="taskResult" IsEnabled="False"/>
+        <TextBox x:Name="delegatesResult" HorizontalAlignment="Left" Height="23" Margin="360,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" IsEnabled="False"/>
+        <TextBox x:Name="asyncResult" HorizontalAlignment="Left" Height="23" Margin="360,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" IsEnabled="False"/>
+        <Button Content="Tasks" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="270,55,0,0" Click="Button_Click_1"/>
+        <Button Content="Delegates" HorizontalAlignment="Left" Margin="270,83,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Content="Async/Await" HorizontalAlignment="Left" Margin="270,110,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="75,159,0,0" TextWrapping="Wrap" Text="Fibonacci" VerticalAlignment="Top"/>
+        <TextBox x:Name="fibInput" HorizontalAlignment="Left" Height="23" Margin="155,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="360,145,0,0" TextWrapping="Wrap" Text="Kompresja" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="75,258,0,0" TextWrapping="Wrap" Text="DNS" VerticalAlignment="Top" RenderTransformOrigin="0.008,0.625"/>
+        <TextBlock HorizontalAlignment="Left" Margin="270,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.101,0.312" Width="97" Text="Responsywność"/>
+        <TextBox x:Name="ipAddress" HorizontalAlignment="Left" Height="119" Margin="75,279,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="175" IsEnabled="False"/>
+        <Button Content="GET" HorizontalAlignment="Left" Margin="75,186,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_3"/>
+        <Button Content="Compress" HorizontalAlignment="Left" Margin="360,166,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4"/>
+        <Button Content="Decompress" HorizontalAlignment="Left" Margin="445,166,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_5"/>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="360,260,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="270,284,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="165"/>
+        <TextBox x:Name="fibResult" HorizontalAlignment="Left" Height="23" Margin="155,186,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <ProgressBar x:Name="fibProgress" HorizontalAlignment="Left" Height="11" Margin="75,214,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button Content="Resolve" HorizontalAlignment="Left" Margin="155,258,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click_6" />
+
+    </Grid>
+</Window>
